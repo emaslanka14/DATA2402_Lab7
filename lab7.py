@@ -63,6 +63,10 @@ net_return = posi_days_total + neg_days_total
 
 print(f'Number of positive trading days: {num_positive_days}, Total positive return: {posi_days_total.round(2)}\n'
       f'Number of negative trading days: {num_negative_days}, Total negative return: {neg_days_total.round(2)}\n'
-      f'Net return: {net_return.round(2)}')
+      f'Net return: {net_return.round(2)}\n')
 
-## Task 6: 
+## Task 6: calculate cumulative return
+f = 1 + rate / 100
+
+cum_return = (np.prod(f) - 1) * 100
+print(f'Cumulative return: {cum_return.round(2)}%')
