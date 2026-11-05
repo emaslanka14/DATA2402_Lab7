@@ -1,6 +1,8 @@
 import numpy as np
 
 ## Task 1: extract columns
+
+
 stock_data = np.genfromtxt('stock_prices_intro.csv', delimiter=',', names=True, dtype=None, encoding='utf-8')
 
 dates = stock_data['Date']
